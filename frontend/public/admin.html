@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="robots" content="noindex, nofollow" />
+  <title>First Wood</title>
+  <link rel="stylesheet" href="/css/style.css" />
+</head>
+<body data-title="a_title">
+  <header id="site-header"></header>
+
+  <main class="container section">
+    <div id="login-box" class="card narrow">
+      <h2 data-i18n="a_login"></h2>
+      <form id="login-form">
+        <label data-i18n="a_user"></label>
+        <input name="username" autocomplete="username" dir="ltr" required />
+        <label data-i18n="a_pass"></label>
+        <input name="password" type="password" autocomplete="current-password" dir="ltr" required />
+        <p id="login-err" class="msg err"></p>
+        <button class="btn" type="submit" data-i18n="a_signin"></button>
+      </form>
+    </div>
+
+    <div id="dashboard" class="hidden">
+      <div class="enq-head">
+        <h2 data-i18n="a_title"></h2>
+        <button id="logout" class="btn" type="button" data-i18n="a_logout"></button>
+      </div>
+
+      <div id="stats" class="stats"></div>
+
+      <div class="toolbar">
+        <select id="f-status">
+          <option value="" data-i18n="a_all"></option>
+          <option value="new" data-i18n="s_new"></option>
+          <option value="in_progress" data-i18n="s_in_progress"></option>
+          <option value="closed" data-i18n="s_closed"></option>
+        </select>
+        <select id="f-type">
+          <option value="" data-i18n="a_all"></option>
+          <option value="quote" data-i18n="t_quote"></option>
+          <option value="raw_wood" data-i18n="t_raw_wood"></option>
+          <option value="deal" data-i18n="t_deal"></option>
+          <option value="consultation" data-i18n="t_consultation"></option>
+          <option value="other" data-i18n="t_other"></option>
+        </select>
+      </div>
+
+      <div id="list"></div>
+    </div>
+  </main>
+
+  <footer id="site-footer"></footer>
+  <script src="/js/i18n.js"></script>
+  <script src="/js/app.js"></script>
+  <script src="/js/admin.js"></script>
+</body>
+</html>
